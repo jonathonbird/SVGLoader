@@ -187,18 +187,20 @@ public class SVGParser
 	 * @param heading
 	 * @return Extract double from expression, else return null.
 	 */
-	public static Double extractDouble(final String expr, final String heading)
+	public static Double[] extractDouble(final String expr, final String heading)
 	{
 		// Extract the substring enclosed y quotation marks
 		final int pos    = expr.indexOf(heading);
 		final int from   = expr.indexOf("\"", pos);     // opening quote
 		final int to     = expr.indexOf("\"", from+1);  // closing quote
 		final String sub = expr.substring(from+1, to);
-		
-		Double result = null;
+		String[] subs = sub.split(" ");
+		Double[] result = new Double[subs.length];
 		try
 		{
-			result = Double.parseDouble(sub);
+			for (int j = 0; j < subs.length; j++) {
+				result[j] = Double.parseDouble(subs[j]);				
+			}
 		}
 		catch (Exception e)
 		{
