@@ -7,6 +7,7 @@ public class Ellipse extends Shapes {
     private double cy;
     private double rx;
     private double ry;
+    private final String label = "ellipse";
 
     public Ellipse(String label) {
         super(label);

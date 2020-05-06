@@ -9,6 +9,7 @@ public class Rect extends Shapes {
     private double ry;
     private double width;
     private double height;
+    private final String label = "rect";
 
     public Rect(String label) {
         super(label);

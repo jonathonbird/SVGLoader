@@ -7,6 +7,7 @@ public class Line extends Shapes {
     private double y1;
     private double x2;
     private double y2;
+    private final String label = "line";
 
     public Line(String label) {
         super(label);
