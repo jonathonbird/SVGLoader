@@ -20,23 +20,22 @@ public class Circle extends Shapes {
 
     @Override
     public boolean load(String expr) {
-        if (expr.contains(" cx=")){
+        if (expr.contains(" cx=")) {
             final Double result = SVGParser.extractDouble(expr, " cx=");
             if (result != null)
                 cx = result.doubleValue();
-       }
-       if (expr.contains(" cy=")){
+        }
+        if (expr.contains(" cy=")) {
             final Double result = SVGParser.extractDouble(expr, " cy=");
             if (result != null)
                 cy = result.doubleValue();
-       }
-       if (expr.contains(" r=")){
+        }
+        if (expr.contains(" r=")) {
             final Double result = SVGParser.extractDouble(expr, " r=");
             if (result != null)
                 r = result.doubleValue();
-       }
+        }
         return false;
     }
-
 
 }
