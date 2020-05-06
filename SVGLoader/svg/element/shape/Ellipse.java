@@ -22,22 +22,22 @@ public class Ellipse extends Shapes {
     @Override
     public boolean load(String expr) {
         if (expr.contains(" cx=")) {
-            final Double result = SVGParser.extractDouble(expr, " cx=");
+            final Double result = SVGParser.extractDouble(expr, " cx=")[0];
             if (result != null)
                 cx = result.doubleValue();
         }
         if (expr.contains(" cy=")) {
-            final Double result = SVGParser.extractDouble(expr, " cy=");
+            final Double result = SVGParser.extractDouble(expr, " cy=")[0];
             if (result != null)
                 cy = result.doubleValue();
         }
         if (expr.contains(" rx=")) {
-            final Double result = SVGParser.extractDouble(expr, " rx=");
+            final Double result = SVGParser.extractDouble(expr, " rx=")[0];
             if (result != null)
                 rx = result.doubleValue();
         }
         if (expr.contains(" ry=")) {
-            final Double result = SVGParser.extractDouble(expr, " ry=");
+            final Double result = SVGParser.extractDouble(expr, " ry=")[0];
             if (result != null)
                 ry = result.doubleValue();
         }

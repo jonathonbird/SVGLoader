@@ -19,7 +19,7 @@ public class SVGLoader
 	void run()
 	{
 		final SVGParser parser = new SVGParser();
-	    final String fileName = "src/test-1.svg";
+	    final String fileName = "SVGLoader/test-1.svg";
 	
 	    try { parser.loadAndParse(fileName); } 
 		catch (IOException e) { e.printStackTrace(); }

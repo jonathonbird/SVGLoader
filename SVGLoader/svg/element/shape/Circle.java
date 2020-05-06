@@ -21,17 +21,17 @@ public class Circle extends Shapes {
     @Override
     public boolean load(String expr) {
         if (expr.contains(" cx=")) {
-            final Double result = SVGParser.extractDouble(expr, " cx=");
+            final Double result = SVGParser.extractDouble(expr, " cx=")[0];
             if (result != null)
                 cx = result.doubleValue();
         }
         if (expr.contains(" cy=")) {
-            final Double result = SVGParser.extractDouble(expr, " cy=");
+            final Double result = SVGParser.extractDouble(expr, " cy=")[0];
             if (result != null)
                 cy = result.doubleValue();
         }
         if (expr.contains(" r=")) {
-            final Double result = SVGParser.extractDouble(expr, " r=");
+            final Double result = SVGParser.extractDouble(expr, " r=")[0];
             if (result != null)
                 r = result.doubleValue();
         }
