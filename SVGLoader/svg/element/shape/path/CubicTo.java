@@ -1,8 +1,6 @@
-package svg.element.shape;
+package svg.element.shape.path;
 
-import svg.element.Element;
-
-public class CubicTo extends PathOp{
+public class CubicTo extends PathOp {
     private double x1;
     private double y1;
     private double x2;
@@ -10,7 +8,7 @@ public class CubicTo extends PathOp{
     private double x3;
     private double y3;
 
-    protected char label = "CubicTo";
+    protected String label = "CubicTo";
     protected boolean absolute;
 
 }

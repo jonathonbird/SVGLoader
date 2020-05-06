@@ -1,4 +1,4 @@
-package svg.element.shape;
+package svg.element.shape.path;
 
 import svg.element.BaseElement;
 
@@ -7,7 +7,4 @@ import svg.element.BaseElement;
     protected char label;
     protected boolean absolute;
 
-     public PathOp(String label) {
-         super(label);
-     }
 }
