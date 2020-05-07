@@ -1,6 +1,7 @@
 package svg.element.shape;
 
 import svg.SVGParser;
+import svg.element.BaseElement;
 import svg.element.Element;
 
 import java.util.ArrayList;
@@ -17,7 +18,7 @@ public class Polygon extends Shapes {
 
     @Override
     public Element newInstance() {
-        return null;
+        return (Polygon) (newInstance());
     }
 
     @Override

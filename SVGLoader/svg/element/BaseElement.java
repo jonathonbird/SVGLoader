@@ -19,7 +19,11 @@ public abstract class BaseElement implements Element
 	{
 		this.label = new String(label);
 	}
-	
+
+	public static BaseElement elementFactory() {
+	}
+
+
 	//-------------------------------------------------------------------------
 
 	@Override
@@ -47,5 +51,7 @@ public abstract class BaseElement implements Element
 	}
 
 	//-------------------------------------------------------------------------
-
+	public Element newInstance(){
+		return (BaseElement)(newInstance());
+	}
 }

@@ -1,6 +1,7 @@
 package svg.element.shape;
 
 import svg.SVGParser;
+import svg.element.BaseElement;
 import svg.element.Element;
 
 public class Rect extends Shapes {
@@ -18,7 +19,7 @@ public class Rect extends Shapes {
 
     @Override
     public Element newInstance() {
-        return null;
+        return (Rect) (newInstance());
     }
 
     @Override

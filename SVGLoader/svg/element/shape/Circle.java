@@ -14,8 +14,8 @@ public class Circle extends Shapes {
     }
 
     @Override
-    public Element newInstance() {
-        return null;
+    public Element newInstance(){
+        return (Circle)(newInstance());
     }
 
     @Override

@@ -15,8 +15,8 @@ public class Ellipse extends Shapes {
     }
 
     @Override
-    public Element newInstance() {
-        return null;
+    public Element newInstance(){
+        return (Ellipse)(newInstance());
     }
 
     @Override

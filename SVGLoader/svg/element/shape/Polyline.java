@@ -1,6 +1,7 @@
 package svg.element.shape;
 
 import svg.SVGParser;
+import svg.element.BaseElement;
 import svg.element.Element;
 
 import java.util.ArrayList;
@@ -16,7 +17,7 @@ public class Polyline extends Shapes {
 
     @Override
     public Element newInstance() {
-        return null;
+        return (Polyline) (newInstance());
     }
 
     @Override
