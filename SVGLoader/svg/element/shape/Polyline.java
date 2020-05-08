@@ -17,7 +17,7 @@ public class Polyline extends Shapes {
 
     @Override
     public Element newInstance() {
-        return (Polyline) (newInstance());
+        return new Polyline(label);
     }
 
     @Override

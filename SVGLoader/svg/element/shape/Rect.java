@@ -19,7 +19,7 @@ public class Rect extends Shapes {
 
     @Override
     public Element newInstance() {
-        return (Rect) (newInstance());
+        return new Rect(label);
     }
 
     @Override

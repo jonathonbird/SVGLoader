@@ -18,7 +18,7 @@ public class Polygon extends Shapes {
 
     @Override
     public Element newInstance() {
-        return (Polygon) (newInstance());
+        return new Polygon(label);
     }
 
     @Override

@@ -16,7 +16,7 @@ public class Line extends Shapes {
 
     @Override
     public Element newInstance(){
-        return (Line)(newInstance());
+        return new Line(label);
     }
 
     @Override
